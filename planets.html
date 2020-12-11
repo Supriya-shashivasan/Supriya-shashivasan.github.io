@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<style>
+html,body {
+  font-family: 'Poppins', sans-serif;  
+  margin:0;
+  width: 100%;
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1{
+    font-size:50px;
+    font-weight: 400;
+    margin:10px 0;
+    text-transform: uppercase;
+}
+h3{
+    font-size:20px;
+    font-weight:300;
+}
+p{
+    font-weight: 100;
+}
+@keyframes fadein {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.wrap{
+  /* height:100%; */
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+}
+.glass{
+  position:relative;
+  color:#ecf0f1;
+  border-radius: 4px;
+  padding: 20px;
+  background: rgba( 255, 255, 255, 0.1 );
+  border: solid 2px rgba(255,255,255,.3);
+  background-clip: padding-box;
+  backdrop-filter: blur( 4px );
+   display: flex;
+   margin: 10px;    
+   justify-content: space-between;
+   align-items: center;
+   width: 40%;
+}
+.glass:nth-child(odd) {
+    animation: fadein 2s;
+}
+
+.glass:nth-child(even) {
+    animation: fadein 3s;
+}
+button{
+    position:relative;
+    display: inline-block;
+    padding:10px;
+    color:#ecf0f1;
+    border-radius: 2px;
+    background: rgba( 255, 255, 255, 0.3 );
+    border: solid 2px rgba(255,255,255,.4);
+    -webkit-background-clip: padding-box;
+    -webkit-backdrop-filter: blur( 40px );
+}
+.info{
+    width: 50%;
+}
+.image{
+    width:45%;
+}
+</style>
+<body>
+    <div class="wrap">
+        <div class="glass">
+            <!-- <div class="holder"> -->
+                <div class="info"> 
+                    <h1>Mercury</h1>
+                    <h3>Fastest planet</h3>
+                    <button>View More</button>
+                </div>
+                <img class="image" src="mercury.png"/>
+            <!-- </div> -->
+        </div>
+        <div class="glass">
+                <!-- <div class="holder"> -->
+                    <div class="info"> 
+                        <h1>Venus</h1>
+                        <h3>Hottest planet</h3>
+                        <div>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <img class="image" src="venus.png"/>
+                <!-- </div> -->
+        </div>
+        <div class="glass">
+                <!-- <div class="holder"> -->
+                    <div class="info"> 
+                        <h1>Earth</h1>
+                        <h3>Blue planet</h3>
+                        <div>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <img class="image" src="earth.png"/>
+                <!-- </div> -->
+        </div>
+        <div class="glass">
+                <!-- <div class="holder"> -->
+                    <div class="info"> 
+                        <h1>Mars</h1>
+                        <h3>Rocky red planet</h3>
+                        <div>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <img class="image" src="mars.png"/>
+                <!-- </div> -->
+        </div>
+        <div class="glass">
+                <!-- <div class="holder"> -->
+                    <div class="info"> 
+                        <h1>Jupiter</h1>
+                        <h3>Biggest planet</h3>
+                        <div>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <img class="image" src="jupiter.png"/>
+                <!-- </div> -->
+        </div>
+        <div class="glass">
+                <!-- <div class="holder"> -->
+                    <div class="info"> 
+                        <h1>Saturn</h1>
+                        <h3>Glorious ringed planet</h3>
+                        <div>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <img class="image" src="saturn.png"/>
+                <!-- </div> -->
+        </div>
+        <div class="glass">
+                <!-- <div class="holder"> -->
+                    <div class="info"> 
+                        <h1>Uranus</h1>
+                        <h3>Giant Ice planet</h3>
+                        <div>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <img class="image" src="uranus.png"/>
+                <!-- </div> -->
+        </div>
+        <div class="glass">
+                <!-- <div class="holder"> -->
+                    <div class="info"> 
+                        <h1>Neptune</h1>
+                        <h3>Gassy planet</h3>
+                        <div>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <img class="image" src="neptune.png"/>
+                <!-- </div> -->
+        </div>
+      </div>
+</body>
+</html>
